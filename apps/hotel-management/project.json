@@ -4,6 +4,9 @@
   "projectType": "application",
   "sourceRoot": "apps/hotel-management/src",
   "prefix": "hotel-management",
+  "implicitDependencies": [
+    "fake-backend"
+  ],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
