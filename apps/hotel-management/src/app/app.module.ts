@@ -4,6 +4,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 import {AppComponent} from './app.component';
 import {NxWelcomeComponent} from './nx-welcome.component';
 import {LandingPageComponent} from './landing-page/landing-page.component';
@@ -21,7 +22,15 @@ import {RoomComponent} from './rooms/room-selection-page/room/room.component';
     RoomViewPageComponent,
     RoomComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, MatToolbarModule, MatIconModule, MatButtonModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
