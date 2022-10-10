@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { RoomViewPageComponent } from './room-view-page.component';
+import {RoomViewPageComponent} from './room-view-page.component';
 
 describe('RoomViewPageComponent', () => {
   let component: RoomViewPageComponent;

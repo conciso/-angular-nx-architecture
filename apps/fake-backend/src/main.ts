@@ -8,7 +8,7 @@ import * as express from 'express';
 const app = express();
 
 app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to fake-backend!' });
+  res.send({message: 'Welcome to fake-backend!'});
 });
 
 const port = 8080;
