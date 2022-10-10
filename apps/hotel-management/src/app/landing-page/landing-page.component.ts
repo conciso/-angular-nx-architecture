@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'hotel-management-landing-page',
@@ -6,7 +7,10 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./landing-page.component.scss'],
 })
 export class LandingPageComponent implements OnInit {
-  constructor() {}
+  toolbarTitle = '';
 
-  ngOnInit(): void {}
+  constructor(private route: ActivatedRoute) {}
+  ngOnInit() {
+    this.toolbarTitle = this.route.snapshot.data['title'];
+  }
 }
