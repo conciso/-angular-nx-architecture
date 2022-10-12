@@ -3,10 +3,14 @@
  * This is only a minimal backend to get started.
  */
 
-import * as express from 'express';
+import express from 'express';
+import cors from 'cors';
 import {getAllRooms, getRoom} from './app/rooms-repository';
 
 const app = express();
+const router = express.Router();
+
+app.use(cors);
 
 app.get('/api', (req, res) => {
   res.send({message: 'Welcome to fake-backend!'});
@@ -25,3 +29,5 @@ const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);
 });
 server.on('error', console.error);
+
+module.exports = router;

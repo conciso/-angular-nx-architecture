@@ -1,4 +1,7 @@
 import {Component, OnInit} from '@angular/core';
+import {map} from 'rxjs';
+import {Room} from '../room';
+import {RoomService} from '../room.service';
 
 @Component({
   selector: 'hotel-management-room-selection-page',
@@ -6,7 +9,11 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./room-selection-page.component.scss'],
 })
 export class RoomSelectionPageComponent implements OnInit {
-  constructor() {}
+  rooms: Room[] = [];
 
-  ngOnInit(): void {}
+  constructor(private roomService: RoomService) {}
+
+  ngOnInit(): void {
+    this.roomService.getRooms().subscribe();
+  }
 }

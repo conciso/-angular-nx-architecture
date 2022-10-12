@@ -12,6 +12,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RoomSelectionPageComponent} from './rooms/room-selection-page/room-selection-page.component';
 import {RoomViewPageComponent} from './rooms/room-view-page/room-view-page.component';
 import {RoomComponent} from './rooms/room-selection-page/room/room.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {RoomComponent} from './rooms/room-selection-page/room/room.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatToolbarModule,
