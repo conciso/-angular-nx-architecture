@@ -3,5 +3,11 @@ const rooms = [
   {id: '2', roomSize: 13, bedSize: 1, extras: ['book', 'chair', 'table']},
 ];
 
-export const getAllRooms = () => rooms;
+//export const getAllRooms = () => rooms;
+
+export const TestData = {
+  getAllRooms() {
+    return rooms;
+  },
+};
 export const getRoom = (id: string) => rooms.find((room) => room.id === id);

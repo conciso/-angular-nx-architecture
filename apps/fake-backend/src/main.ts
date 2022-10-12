@@ -3,31 +3,21 @@
  * This is only a minimal backend to get started.
  */
 
-import express from 'express';
-import cors from 'cors';
-import {getAllRooms, getRoom} from './app/rooms-repository';
+import * as express from 'express';
+import {TestData} from './app/rooms-repository';
 
 const app = express();
-const router = express.Router();
-
-app.use(cors);
 
 app.get('/api', (req, res) => {
-  res.send({message: 'Welcome to fake-backend!'});
+  res.send({message: 'Welcome to backend!'});
 });
 
 app.get('/api/rooms', (req, res) => {
-  res.send(getAllRooms());
+  res.send(TestData.getAllRooms());
 });
 
-app.get('/api/room/:id', (req, res) => {
-  return res.send(getRoom(req.params.id));
-});
-
-const port = 8080;
+const port = process.env.port || 3030;
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);
 });
 server.on('error', console.error);
-
-module.exports = router;
