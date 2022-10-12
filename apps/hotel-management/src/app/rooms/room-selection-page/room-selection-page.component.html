@@ -1,29 +1,5 @@
-<div class="grid-container">
-  <div class="grid-item">
-    <hotel-management-room></hotel-management-room>
-  </div>
-  <div class="grid-item">
-    <hotel-management-room></hotel-management-room>
-  </div>
-  <div class="grid-item">
-    <hotel-management-room></hotel-management-room>
-  </div>
-  <div class="grid-item">
-    <hotel-management-room></hotel-management-room>
-  </div>
-  <div class="grid-item">
-    <hotel-management-room></hotel-management-room>
-  </div>
-  <div class="grid-item">
-    <hotel-management-room></hotel-management-room>
-  </div>
-  <div class="grid-item">
-    <hotel-management-room></hotel-management-room>
-  </div>
-  <div class="grid-item">
-    <hotel-management-room></hotel-management-room>
-  </div>
-  <div class="grid-item">
-    <hotel-management-room></hotel-management-room>
+<div *ngIf="rooms$ | async as rooms" class="grid-container">
+  <div class="grid-item" *ngFor="let room of rooms">
+    <hotel-management-room [name]="room.name" [roomSize]="room.roomSize"></hotel-management-room>
   </div>
 </div>

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {map} from 'rxjs';
+import {map, Observable, Subject, takeUntil} from 'rxjs';
 import {Room} from '../room';
 import {RoomService} from '../room.service';
 
@@ -9,11 +9,18 @@ import {RoomService} from '../room.service';
   styleUrls: ['./room-selection-page.component.scss'],
 })
 export class RoomSelectionPageComponent implements OnInit {
-  rooms: Room[] = [];
+  rooms$!: Observable<Room[]>;
+
+  private unsubscribe$ = new Subject<void>();
 
   constructor(private roomService: RoomService) {}
 
   ngOnInit(): void {
-    this.roomService.getRooms().subscribe();
+    this.rooms$ = this.roomService.getRooms().pipe(takeUntil(this.unsubscribe$));
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
   }
 }
