@@ -7,15 +7,13 @@ import {Room} from './room';
   providedIn: 'root',
 })
 export class RoomService {
-  baseUrl = '/rooms';
-
   constructor(private http: HttpClient) {}
 
-  getRoom(id: string) {
-    return this.http.get<Room>(environment.API_URL + this.baseUrl + id);
+  getRoom(id: string | null) {
+    return this.http.get<Room>(environment.API_URL + '/room/' + id);
   }
 
   getRooms() {
-    return this.http.get<Room[]>(environment.API_URL + this.baseUrl);
+    return this.http.get<Room[]>(environment.API_URL + '/rooms');
   }
 }
