@@ -11,6 +11,9 @@ export class RoomComponent {
   name!: string;
 
   @Input()
+  image!: string;
+
+  @Input()
   roomSize!: number;
 
   @Input()

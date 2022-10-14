@@ -1,5 +1,10 @@
 <div *ngIf="rooms$ | async as rooms" class="grid-container">
   <div class="grid-item" *ngFor="let room of rooms">
-    <hotel-management-room [name]="room.name" [roomSize]="room.roomSize" [id]="room.id"></hotel-management-room>
+    <hotel-management-room
+      [name]="room.name"
+      [roomSize]="room.roomSize"
+      [id]="room.id"
+      [image]="room.image"
+    ></hotel-management-room>
   </div>
 </div>

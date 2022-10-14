@@ -22,8 +22,7 @@ export class RoomViewPageComponent {
     this.id = this.route.snapshot.paramMap.get('id');
     console.log(this.id);
 
-    //this.room$ = this.roomService.getRoom(this.id).pipe(takeUntil(this.unsubscribe$));
-    this.roomService.getRoom(this.id).subscribe();
+    this.room$ = this.roomService.getRoom(this.id).pipe(takeUntil(this.unsubscribe$));
   }
 
   ngOnDestroy(): void {

@@ -12,6 +12,8 @@ app.get('/api', (req, res) => {
   res.send({message: 'Welcome to backend!'});
 });
 
+app.use('/static', express.static('apps/fake-backend/src/assets'));
+
 app.get('/api/rooms', (req, res) => {
   res.send(TestData.getAllRooms());
 });
