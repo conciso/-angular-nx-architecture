@@ -96,5 +96,5 @@
       }
     }
   },
-  "tags": []
+  "tags": ["domain:hotel-management", "type:app"]
 }

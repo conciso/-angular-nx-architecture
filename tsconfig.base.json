@@ -15,9 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@hotel-management/hotel-management/domain": [
+        "libs/hotel-management/domain/src/index.ts"
+      ],
+      "@hotel-management/luggage/domain": ["libs/luggage/domain/src/index.ts"],
       "@hotel-management/luggage/feature-checkin": [
         "libs/luggage/feature-checkin/src/index.ts"
-      ]
+      ],
+      "@hotel-management/rooms/domain": ["libs/rooms/domain/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

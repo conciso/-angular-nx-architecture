@@ -13,7 +13,6 @@ import { RoomSelectionPageComponent } from './rooms/room-selection-page/room-sel
 import { RoomViewPageComponent } from './rooms/room-view-page/room-view-page.component';
 import { RoomComponent } from './rooms/room-selection-page/room/room.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LuggageFeatureCheckinModule } from '@hotel-management/luggage/feature-checkin';
 
 @NgModule({
   declarations: [
@@ -32,8 +31,7 @@ import { LuggageFeatureCheckinModule } from '@hotel-management/luggage/feature-c
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule,
-    LuggageFeatureCheckinModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

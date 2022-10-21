@@ -1,0 +1,27 @@
+{
+  "name": "rooms-domain",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/rooms/domain/src",
+  "prefix": "rooms",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/rooms/domain"],
+      "options": {
+        "jestConfig": "libs/rooms/domain/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/rooms/domain/**/*.ts",
+          "libs/rooms/domain/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["domain:rooms", "type:domain-logic"]
+}

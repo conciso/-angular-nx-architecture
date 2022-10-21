@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {map, Observable, Subject, takeUntil} from 'rxjs';
+import {Observable, Subject, takeUntil} from 'rxjs';
 import {Room} from '../room';
 import {RoomService} from '../room.service';
 
