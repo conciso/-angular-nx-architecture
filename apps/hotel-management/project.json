@@ -89,7 +89,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/hotel-management"],
+      "outputs": ["{workspaceRoot}/coverage/apps/hotel-management"],
       "options": {
         "jestConfig": "apps/hotel-management/jest.config.ts",
         "passWithNoTests": true

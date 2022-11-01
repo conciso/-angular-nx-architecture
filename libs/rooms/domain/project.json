@@ -7,7 +7,7 @@
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/rooms/domain"],
+      "outputs": ["{workspaceRoot}/coverage/libs/rooms/domain"],
       "options": {
         "jestConfig": "libs/rooms/domain/jest.config.ts",
         "passWithNoTests": true

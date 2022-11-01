@@ -7,7 +7,7 @@
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/luggage/feature-checkin"],
+      "outputs": ["{workspaceRoot}/coverage/libs/luggage/feature-checkin"],
       "options": {
         "jestConfig": "libs/luggage/feature-checkin/jest.config.ts",
         "passWithNoTests": true

@@ -49,7 +49,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/fake-backend"],
+      "outputs": ["{workspaceRoot}/coverage/apps/fake-backend"],
       "options": {
         "jestConfig": "apps/fake-backend/jest.config.ts",
         "passWithNoTests": true
