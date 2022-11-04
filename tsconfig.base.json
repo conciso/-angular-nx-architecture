@@ -18,11 +18,23 @@
       "@hotel-management/hotel-management/domain": [
         "libs/hotel-management/domain/src/index.ts"
       ],
-      "@hotel-management/luggage/domain": ["libs/luggage/domain/src/index.ts"],
-      "@hotel-management/luggage/feature-checkin": [
-        "libs/luggage/feature-checkin/src/index.ts"
+      "@hotel-management/hotel-management/feature-check-in": [
+        "libs/hotel-management/feature-check-in/src/index.ts"
       ],
-      "@hotel-management/rooms/domain": ["libs/rooms/domain/src/index.ts"]
+      "@hotel-management/hotel-management/feature-check-out": [
+        "libs/hotel-management/feature-check-out/src/index.ts"
+      ],
+      "@hotel-management/luggage/domain": ["libs/luggage/domain/src/index.ts"],
+      "@hotel-management/luggage/feature-check-in": [
+        "libs/luggage/feature-check-in/src/index.ts"
+      ],
+      "@hotel-management/luggage/feature-check-out": [
+        "libs/luggage/feature-check-out/src/index.ts"
+      ],
+      "@hotel-management/rooms/domain": ["libs/rooms/domain/src/index.ts"],
+      "@hotel-management/rooms/feature-cleaning": [
+        "libs/rooms/feature-cleaning/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
