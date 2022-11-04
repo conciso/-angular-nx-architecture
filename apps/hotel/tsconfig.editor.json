@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "../../libs/rooms/domain/src/lib/entities/room.ts", "../../libs/rooms/domain/src/lib/infrastructure/room.service.ts", "../../libs/rooms/domain/src/lib/infrastructure/room.service.ts", "../../libs/rooms/domain/src/lib/entities/room.ts"],
   "compilerOptions": {
     "types": ["jest", "node"]
   }

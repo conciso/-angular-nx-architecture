@@ -1,0 +1,36 @@
+{
+  "name": "environments",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/environments/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/environments",
+        "main": "libs/shared/environments/src/index.ts",
+        "tsConfig": "libs/shared/environments/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "libs/shared/environments/src/environments/environment.ts",
+              "with": "libs/shared/environments/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/environments/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

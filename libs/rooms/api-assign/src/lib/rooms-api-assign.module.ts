@@ -6,6 +6,6 @@ import { RoomsDomainModule } from '@hotel-management/rooms/domain';
   imports: [
     CommonModule,
     RoomsDomainModule
-  ],
+  ]
 })
 export class RoomsApiAssignModule {}

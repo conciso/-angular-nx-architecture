@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@hotel-management/environments": [
+        "libs/shared/environments/src/index.ts"
+      ],
       "@hotel-management/hotel-management/domain": [
         "libs/hotel-management/domain/src/index.ts"
       ],
@@ -37,6 +40,9 @@
       "@hotel-management/rooms/domain": ["libs/rooms/domain/src/index.ts"],
       "@hotel-management/rooms/feature-cleaning": [
         "libs/rooms/feature-cleaning/src/index.ts"
+      ],
+      "@hotel-management/rooms/feature-info": [
+        "libs/rooms/feature-info/src/index.ts"
       ]
     }
   },

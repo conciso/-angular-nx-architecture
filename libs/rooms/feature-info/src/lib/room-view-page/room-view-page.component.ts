@@ -1,16 +1,15 @@
-import {Component} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import { Room, RoomDataService } from '@hotel-management/rooms/domain';
 import {Observable, Subject, takeUntil} from 'rxjs';
-import {Room} from '../room';
-import {RoomService} from '../room.service';
 
 @Component({
   selector: 'hotel-management-room-view-page',
   templateUrl: './room-view-page.component.html',
   styleUrls: ['./room-view-page.component.scss'],
 })
-export class RoomViewPageComponent {
-  constructor(private route: ActivatedRoute, private roomService: RoomService) {}
+export class RoomViewPageComponent implements OnInit, OnDestroy {
+  constructor(private route: ActivatedRoute, private roomService: RoomDataService) {}
 
   private unsubscribe$ = new Subject<void>();
 
