@@ -31,6 +31,9 @@
       "@hotel-management/luggage/feature-check-out": [
         "libs/luggage/feature-check-out/src/index.ts"
       ],
+      "@hotel-management/rooms/api-assign": [
+        "libs/rooms/api-assign/src/index.ts"
+      ],
       "@hotel-management/rooms/domain": ["libs/rooms/domain/src/index.ts"],
       "@hotel-management/rooms/feature-cleaning": [
         "libs/rooms/feature-cleaning/src/index.ts"
