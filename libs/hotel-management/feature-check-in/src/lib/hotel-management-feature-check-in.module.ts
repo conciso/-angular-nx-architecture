@@ -20,7 +20,7 @@ const routes = [{
     CommonModule,
     HotelManagementDomainModule,
     RouterModule.forChild(routes),
-    MatCardModule,
+    MatCardModule
   ],
   declarations: [CheckInComponent, RoomSelectionPageComponent, RoomComponent],
   exports: [CheckInComponent, RoomSelectionPageComponent, RoomComponent],

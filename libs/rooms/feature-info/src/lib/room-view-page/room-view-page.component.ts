@@ -4,7 +4,7 @@ import { Room, RoomDataService } from '@hotel-management/rooms/domain';
 import {Observable, Subject, takeUntil} from 'rxjs';
 
 @Component({
-  selector: 'hotel-management-room-view-page',
+  selector: 'rooms-hotel-management-room-view-page',
   templateUrl: './room-view-page.component.html',
   styleUrls: ['./room-view-page.component.scss'],
 })

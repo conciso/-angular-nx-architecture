@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CleaningFacade } from '@hotel-management/rooms/domain';
 
 @Component({
@@ -6,8 +6,6 @@ import { CleaningFacade } from '@hotel-management/rooms/domain';
   templateUrl: './cleaning.component.html',
   styleUrls: ['./cleaning.component.scss'],
 })
-export class CleaningComponent implements OnInit {
+export class CleaningComponent {
   constructor(private cleaningFacade: CleaningFacade) {}
-
-  ngOnInit() {}
 }

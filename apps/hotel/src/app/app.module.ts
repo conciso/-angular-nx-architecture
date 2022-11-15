@@ -32,7 +32,7 @@ import { RoomsFeatureInfoModule } from '@hotel-management/rooms/feature-info';
     LuggageFeatureCheckOutModule,
     LuggageFeatureCheckInModule,
     RoomsFeatureCleaningModule,
-    RoomsFeatureInfoModule,
+    RoomsFeatureInfoModule
   ],
   providers: [],
   bootstrap: [AppComponent],

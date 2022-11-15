@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import { RoomViewPageComponent } from '@hotel-management/rooms/feature-info';
 import {LandingPageComponent} from './landing-page/landing-page.component';
-import {RoomViewPageComponent} from '../../../../libs/rooms/feature-info/src/lib/room-view-page/room-view-page.component';
 
 const routes: Routes = [
   {

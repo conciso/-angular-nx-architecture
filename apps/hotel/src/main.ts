@@ -1,8 +1,8 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { environment } from '@hotel-management/environments';
 
 import { AppModule } from './app/app.module';
-import { environment } from '../../../libs/shared/environments/src/environments/environment';
 
 if (environment.production) {
   enableProdMode();

@@ -33,6 +33,7 @@
               {
                 "sourceTag": "type:feature",
                 "onlyDependOnLibsWithTags": [
+                  "type:api",
                   "type:ui",
                   "type:domain-logic",
                   "type:util"
@@ -62,6 +63,7 @@
                 "sourceTag": "domain:hotel-management",
                 "onlyDependOnLibsWithTags": [
                   "domain:hotel-management",
+                  "domain:rooms/api-assign",
                   "domain:shared"
                 ]
               }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CheckOutFacade } from '@hotel-management/hotel-management/domain';
 
 @Component({
@@ -6,8 +6,6 @@ import { CheckOutFacade } from '@hotel-management/hotel-management/domain';
   templateUrl: './check-out.component.html',
   styleUrls: ['./check-out.component.scss'],
 })
-export class CheckOutComponent implements OnInit {
+export class CheckOutComponent {
   constructor(private checkOutFacade: CheckOutFacade) {}
-
-  ngOnInit() {}
 }
